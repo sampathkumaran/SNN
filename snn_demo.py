@@ -105,7 +105,7 @@ class MetricsTracker:
             stats['avg_sparsity'] = np.mean(self.metrics['sparsity'][-10:])
         return stats
 
-    # ✅ bring back save_checkpoint
+    # bring back save_checkpoint
     def save_checkpoint(self, episode: int):
         """Save metrics to file"""
         filename = f"outputs/data/{self.model_type}_metrics_ep{episode}.pkl"
